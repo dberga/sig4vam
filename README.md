@@ -15,6 +15,7 @@ stimulusCode/psicometric_param_values -> defines the psychometric values (psi fa
 stimulusCode/general/ -> it generates any image of the selected type
 
 ### NOTE: The core of the code is based on M.W. Spratling's Code
+	Ref: M. W. Spratling (2012) Predictive coding as a model of the V1 saliency map hypothesis. Neural Networks, 26:7-28. 
 	DOI: 10.1016/j.neunet.2011.10.002
 	URL=https://nms.kcl.ac.uk/michael.spratling/Code/v1_saliency.zip
 
