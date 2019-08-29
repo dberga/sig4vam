@@ -10,8 +10,8 @@ if nargin<11, shape_cell={define_bar(len,wid),define_bar(len,wid)}; end
 
 bar1=define_anyshape(len,wid,shape_cell{1});
 bar2=define_anyshape(len,wid,shape_cell{2});
-[I,~,xlocations,ylocations]=define_blank_image(gridsize,len,spacing,backgnd(1));
-hlen=fix((size(shape,1))/2); 
+[I,~,xlocations,ylocations]=define_blank_image(gridsize,len,spacing,backgnd);
+hlen=fix((size(bar1,1))/2); 
 %for color/brightess experiments, avoid screen luminosity gradient by drawing stimulus outside up and down margins
 xmargin=floor(0.15*size(I,1));
 ymargin=0;

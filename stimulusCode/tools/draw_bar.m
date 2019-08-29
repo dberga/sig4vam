@@ -5,11 +5,39 @@ function I=draw_bar(I,x,y,bar,angle,contrast,backgnd)
 %norm=sum(sum(bar));
 bar=imrotate(bar,angle,'bilinear','crop'); 
 %bar=bar.*(norm./sum(sum(bar)));
-bar=(bar.*contrast)+backgnd;
+
+
 len=size(bar,1);
 hlen=fix((len-1)/2);
-if contrast>=0;
-  I(x-hlen:x+hlen,y-hlen:y+hlen)=max(I(x-hlen:x+hlen,y-hlen:y+hlen),bar);
-else
-  I(x-hlen:x+hlen,y-hlen:y+hlen)=min(I(x-hlen:x+hlen,y-hlen:y+hlen),bar);
+
+if size(bar,3)>1 || numel(backgnd)>3 %real images
+    I(x-hlen:x+hlen,y-hlen:y+hlen,:)=superimpose_bar(bar,I(x-hlen:x+hlen,y-hlen:y+hlen,:));
+else %psychophysical images
+    
+    if contrast>0
+        try
+            bar=(bar.*contrast)+backgnd;
+        catch
+            bar=(bar.*contrast)+backgnd(1);
+        end
+    end
+    if contrast>=0
+        
+    
+        %   I(x-hlen:x+hlen,y-hlen:y+hlen)=max(I(x-hlen:x+hlen,y-hlen:y+hlen),bar);
+          I(x-hlen:x+hlen,y-hlen:y+hlen)=max(I(x-hlen:x+hlen,y-hlen:y+hlen),bar);
+        else
+        %   I(x-hlen:x+hlen,y-hlen:y+hlen)=min(I(x-hlen:x+hlen,y-hlen:y+hlen),bar);
+          I(x-hlen:x+hlen,y-hlen:y+hlen)=min(I(x-hlen:x+hlen,y-hlen:y+hlen),bar);
+    end
+
+end
+    
+
+    
+
+
+    
+    
+
 end

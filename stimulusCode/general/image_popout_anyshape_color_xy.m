@@ -9,7 +9,7 @@ if nargin<10, surr_prob=1; end
 if nargin<11, Ishape=define_bar(len,wid); end
 
 shape=define_anyshape(len,wid,Ishape);
-[I,~,xlocations,ylocations]=define_blank_image(gridsize,len,spacing,backgnd(1));
+[I,~,xlocations,ylocations]=define_blank_image(gridsize,len,spacing,backgnd);
 hlen=fix((size(shape,1))/2); 
 
 %for color/brightess experiments, avoid screen luminosity gradient by drawing stimulus outside up and down margins
