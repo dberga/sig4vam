@@ -14,7 +14,7 @@ function [  ] = vsearch_asymmetry_color( evaluation_list)
         case 'vsearch-asymmetry-color'
             disp(evaluation_list{e});
             mkdir(['dataset_blocks' '/' evaluation_list{e}]);
-            evaluation_conditions{e}={'rT-wB','bT-wB','rT-rrB','bT-rrB'};
+            evaluation_conditions{e}={'rT-wB','bT-wB'}; %'rT-rrB','bT-rrB'}; %these (red background) are bugged
             values=psycontrast; 
             evaluation_values{e}=psycontrast;
             theta=zeros(numel(psycontrast),1); %angle

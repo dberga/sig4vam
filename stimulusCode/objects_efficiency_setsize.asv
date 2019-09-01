@@ -7,23 +7,14 @@ function [  ] = objects_efficiency_setsize( evaluation_list )
     [ a_rand, b_rand, y_rand, x_rand ] = coord_param_values( 4, cnum, gridsize, stimsize );
     [jitter_pos,jitter_angle,surr_prob,background_bw,contrast_bw]=displacement_params;
     
-    target_path='stimulusCode/shapes/objects/donut.png';
-    distractors_path='stimulusCode/shapes/objects/cd.png';
-    Ishapes_rgb{1}=invert_background(load_anyshape(target_path,0));
-    Ishapes_rgb{2}=invert_background(load_anyshape(distractors_path,0));
-    Ishapes{1}=invert_background(load_anyshape(target_path,0));
+    target_path='stimulusCode/shapes/objects/car1.png';
+    distractors_path='stimulusCode/shapes/objects/car2.png';
+    
+    Ishapes_rgb{1}=rgb2gray(load_anyshape(target_path));
+    Ishapes_rgb{2}=invert_background(load_anyshape(distractors_path));
+    Ishapes{1}=rgb2gray(load_anyshape(target_path,1));
     Ishapes{2}=invert_background(load_anyshape(distractors_path,0));
     Ibackground=load_anyshape('stimulusCode/shapes/backgrounds/nature_25.png');
-    
-    %another example
-    
-    %target_path='stimulusCode/shapes/objects/elephant.png';
-    %distractors_path='stimulusCode/shapes/objects/elephant.png';
-    %Ishapes_rgb{1}=load_anyshape(target_path,1));
-    %Ishapes_rgb{2}=load_anyshape(target_path,1));
-    %Ishapes{1}=load_anyshape(target_path,1);
-    %Ishapes{2}=load_anyshape(target_path,1));
-    %Ibackground=load_anyshape('stimulusCode/shapes/backgrounds/nature_25.png');
     
     %experiment
     for e=1:numel(evaluation_list)

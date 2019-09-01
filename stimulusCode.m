@@ -28,6 +28,7 @@ evaluation_list = {...
       'vsearch-orientation-heterogeneity',...
       'vsearch-orientation-linearity',...
       'vsearch-orientation-categorical',...    
+      'objects-efficiency-setsize'
 };
 
 
@@ -52,12 +53,14 @@ vsearch_similarity_size(evaluation_list);
 vsearch_similarity_orientation(evaluation_list);
 %search asymmetries produced by distractor-target luminance/color
 vsearch_asymmetry_brightness(evaluation_list);
-vsearch_asymmetry_color(evaluation_list);
+% vsearch_asymmetry_color(evaluation_list); %for this, load previous commits, current is bugged
 %search asymmetries produced by categorization, heterogeneity and linearity
 vsearch_orientation_categorical(evaluation_list);
 vsearch_orientation_heterogeneity(evaluation_list);
 vsearch_orientation_linearity(evaluation_list);
 
 
+%Real objects
+objects_efficiency_setsize(evaluation_list);
 end
 

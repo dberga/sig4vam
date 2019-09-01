@@ -5,11 +5,25 @@ function [  ] = fview_perceptualgrouping( evaluation_list )
     [barlen,barwid,spacing]=standard_image_param_values(imsizefac,crop,1);
     [ a_rand, b_rand, y_rand, x_rand ] = coord_param_values( 2, cnum, gridsize, stimsize );
     [jitter_pos,jitter_angle,surr_prob,background_bw,contrast_bw]=displacement_params;
-    Ishapes_rgb{1}=load_anyshape('stimulusCode/shapes/objects/cd.png');
-    Ishapes_rgb{2}=load_anyshape('stimulusCode/shapes/objects/wheel.png');
-    Ishapes{1}=load_anyshape('stimulusCode/shapes/objects/cd.png',1);
-    Ishapes{2}=load_anyshape('stimulusCode/shapes/objects/wheel.png',1);
+    
+    
+    target_path='stimulusCode/shapes/objects/donut.png';
+    distractors_path='stimulusCode/shapes/objects/cd.png';
+    Ishapes_rgb{1}=invert_background(load_anyshape(target_path,0));
+    Ishapes_rgb{2}=invert_background(load_anyshape(distractors_path,0));
+    Ishapes{1}=invert_background(load_anyshape(target_path,0));
+    Ishapes{2}=invert_background(load_anyshape(distractors_path,0));
     Ibackground=load_anyshape('stimulusCode/shapes/backgrounds/nature_25.png');
+    
+    %another example
+    
+    %target_path='stimulusCode/shapes/objects/elephant.png';
+    %distractors_path='stimulusCode/shapes/objects/elephant.png';
+    %Ishapes_rgb{1}=load_anyshape(target_path,1));
+    %Ishapes_rgb{2}=load_anyshape(target_path,1));
+    %Ishapes{1}=load_anyshape(target_path,1);
+    %Ishapes{2}=load_anyshape(target_path,1));
+    %Ibackground=load_anyshape('stimulusCode/shapes/backgrounds/nature_25.png');
     
     %experiment
     for e=1:numel(evaluation_list)
