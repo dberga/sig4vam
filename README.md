@@ -4,14 +4,14 @@ This is a code for generating synthetic stimuli
 
 #### RUN
 
--Run "stimulusCode.m" to generate stimuli
--Files will be saved to "dataset" and "dataset_blocks"
+-Run "stimulusCode.m" to generate stimuli<br/>
+-Files will be saved to "dataset" and "dataset_blocks"<br/>
 -both masks and extra files will be generated in such folders
 
 #### GENERAL FUNCTIONS:
 
-stimulusCode/common_param_values -> defines the experimental setup (image characteristics, object size ...)
-stimulusCode/psicometric_param_values -> defines the psychometric values (psi factor, slope, N ...)
+stimulusCode/common_param_values -> defines the experimental setup (image characteristics, object size ...)<br/>
+stimulusCode/psicometric_param_values -> defines the psychometric values (psi factor, slope, N ...)<br/>
 stimulusCode/general/ -> it generates any image of the selected type
 
 #### Please, if you use this code, cite:
