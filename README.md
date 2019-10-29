@@ -17,7 +17,7 @@ stimulusCode/general/ -> it generates any image of the selected type
 #### Please, if you use this code, cite:
 
 ````
-@article{Berga2019a,
+@article{Berga_2019_VisRes,
 title = "Psychophysical evaluation of individual low-level feature influences on visual attention",
 journal = "Vision Research",
 volume = "154",
@@ -28,6 +28,15 @@ doi = "https://doi.org/10.1016/j.visres.2018.10.006",
 url = "http://www.sciencedirect.com/science/article/pii/S0042698918302207",
 author = "David Berga and Xosé R. Fdez-Vidal and Xavier Otazu and Víctor Leborán and Xosé M. Pardo"
 }
+
+@InProceedings{Berga_2019_ICCV,
+author = {Berga, David and Fdez-Vidal, Xose R. and Otazu, Xavier and Pardo, Xose M.},
+title = {SID4VAM: A Benchmark Dataset With Synthetic Images for Visual Attention Modeling},
+booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}
+}
+
 ````
 
 
