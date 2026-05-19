@@ -47,7 +47,7 @@ year = {2019}
 ### SID4VAM: Synthetic Image Dataset for Visual Attention Modeling
 Note: You can use this as test set and use the generator (SIG4VAM) with the automatically generated masks to train your model at wish. We use a [this benchmark](https://github.com/dberga/saliency) for saliency evaluation.
 
-> Images and Masks: https://owncloud.cvc.uab.es/owncloud/index.php/s/BlxkIHdvpN4pIYg
+> Images and Masks: [https://drive.google.com/drive/folders/1YV_VGRlmPoJnYlh1W0c1REBzjQZCXQyk?usp=sharing](https://drive.google.com/drive/folders/1YV_VGRlmPoJnYlh1W0c1REBzjQZCXQyk?usp=sharing)
 
-> Fixation Data: https://owncloud.cvc.uab.es/owncloud/index.php/s/wfK1SKIjoHEmtzK
+> Fixation Data and more: [https://drive.google.com/drive/folders/11VYqWsy0AY1aO7IJYqs_7ITJW8d-n5wi?usp=sharing](https://drive.google.com/drive/folders/11VYqWsy0AY1aO7IJYqs_7ITJW8d-n5wi?usp=sharing)
 
