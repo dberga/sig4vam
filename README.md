@@ -14,9 +14,11 @@ stimulusCode/psicometric_param_values -> defines the psychometric values (psi fa
 stimulusCode/general/ -> it generates any image of the selected type
 
 #### Please, if you use this code, cite these two articles:
-https://www.sciencedirect.com/science/article/pii/S0042698918302207
+Dataset psychophysics: https://www.sciencedirect.com/science/article/pii/S0042698918302207
 
-https://ieeexplore.ieee.org/document/9008799
+Dataset saliency benchmark: https://ieeexplore.ieee.org/document/9008799
+
+Also see The CVF publication [here](https://openaccess.thecvf.com/content_ICCV_2019/html/Berga_SID4VAM_A_Benchmark_Dataset_With_Synthetic_Images_for_Visual_Attention_ICCV_2019_paper.html)
 
 ````
 @article{Berga_2019_VisRes,
@@ -30,18 +32,18 @@ doi = "https://doi.org/10.1016/j.visres.2018.10.006",
 url = "http://www.sciencedirect.com/science/article/pii/S0042698918302207",
 author = "David Berga and Xosé R. Fdez-Vidal and Xavier Otazu and Víctor Leborán and Xosé M. Pardo"
 }
-
-@InProceedings{Berga_2019_ICCV,
-author = {Berga, David and Fdez-Vidal, Xose R. and Otazu, Xavier and Pardo, Xose M.},
-title = {SID4VAM: A Benchmark Dataset With Synthetic Images for Visual Attention Modeling},
-booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
-doi = "10.1109/ICCV.2019.00888",
-url = "https://ieeexplore.ieee.org/document/9008799",
-month = {October},
-year = {2019}
+@inproceedings{Berga2019_ICCV,
+  title = {SID4VAM: A Benchmark Dataset With Synthetic Images for Visual Attention Modeling},
+  url = {http://dx.doi.org/10.1109/ICCV.2019.00888},
+  DOI = {10.1109/iccv.2019.00888},
+  booktitle = {2019 IEEE/CVF International Conference on Computer Vision (ICCV)},
+  publisher = {IEEE},
+  author = {Berga,  David and Vidal,  Xose Ramon Fernandez and Otazu,  Xavier and Pardo,  Xose M.},
+  year = {2019},
+  month = Oct,
+  pages = {8788–8797}
 }
 ````
-Also see The CVF: https://openaccess.thecvf.com/content_ICCV_2019/html/Berga_SID4VAM_A_Benchmark_Dataset_With_Synthetic_Images_for_Visual_Attention_ICCV_2019_paper.html
 
 ### NOTE: The core of the code is based on previous M.W. Spratling's Code
 	Ref: M. W. Spratling (2012) Predictive coding as a model of the V1 saliency map hypothesis. Neural Networks, 26:7-28. 
