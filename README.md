@@ -13,9 +13,10 @@ stimulusCode/common_param_values -> defines the experimental setup (image charac
 stimulusCode/psicometric_param_values -> defines the psychometric values (psi factor, slope, N ...)<br/>
 stimulusCode/general/ -> it generates any image of the selected type
 
-#### Please, if you use this code, cite:
+#### Please, if you use this code, cite these two articles:
 https://www.sciencedirect.com/science/article/pii/S0042698918302207
-https://openaccess.thecvf.com/content_ICCV_2019/html/Berga_SID4VAM_A_Benchmark_Dataset_With_Synthetic_Images_for_Visual_Attention_ICCV_2019_paper.html
+
+https://ieeexplore.ieee.org/document/9008799
 
 ````
 @article{Berga_2019_VisRes,
@@ -34,11 +35,14 @@ author = "David Berga and Xosé R. Fdez-Vidal and Xavier Otazu and Víctor Lebor
 author = {Berga, David and Fdez-Vidal, Xose R. and Otazu, Xavier and Pardo, Xose M.},
 title = {SID4VAM: A Benchmark Dataset With Synthetic Images for Visual Attention Modeling},
 booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+doi = "10.1109/ICCV.2019.00888",
+url = "https://ieeexplore.ieee.org/document/9008799",
 month = {October},
 year = {2019}
 }
-
 ````
+Also see The CVF: https://openaccess.thecvf.com/content_ICCV_2019/html/Berga_SID4VAM_A_Benchmark_Dataset_With_Synthetic_Images_for_Visual_Attention_ICCV_2019_paper.html
+
 ### NOTE: The core of the code is based on previous M.W. Spratling's Code
 	Ref: M. W. Spratling (2012) Predictive coding as a model of the V1 saliency map hypothesis. Neural Networks, 26:7-28. 
 	DOI: 10.1016/j.neunet.2011.10.002
