@@ -1,6 +1,9 @@
 SIG4VAM: Synthetic Image Generator for Visual Attention Modeling
 ---
 This is a code for generating synthetic stimuli
+
+<img width="624" height="174" alt="image" src="https://github.com/user-attachments/assets/ff9ca5a3-0615-4131-94c8-65113011ecda" />
+
 #### RUN
 
 -Run "stimulusCode.m" to generate stimuli<br/>
@@ -56,4 +59,17 @@ Note: You can use this as test set and use the generator (SIG4VAM) with the auto
 > Images and Masks: [https://drive.google.com/drive/folders/1YV_VGRlmPoJnYlh1W0c1REBzjQZCXQyk?usp=sharing](https://drive.google.com/drive/folders/1YV_VGRlmPoJnYlh1W0c1REBzjQZCXQyk?usp=sharing)
 
 > Fixation Data and more: [https://drive.google.com/drive/folders/11VYqWsy0AY1aO7IJYqs_7ITJW8d-n5wi?usp=sharing](https://drive.google.com/drive/folders/11VYqWsy0AY1aO7IJYqs_7ITJW8d-n5wi?usp=sharing)
+
+<img width="671" height="598" alt="image" src="https://github.com/user-attachments/assets/d6828a9c-8724-437b-8574-f7e104a5bf79" />
+<img width="674" height="577" alt="image" src="https://github.com/user-attachments/assets/35fddda2-c7ab-4075-87c4-599cc73661ed" />
+<img width="688" height="577" alt="image" src="https://github.com/user-attachments/assets/1729237f-5bb8-42a4-9821-55ace6b5fd2c" />
+<img width="672" height="792" alt="image" src="https://github.com/user-attachments/assets/5653d30e-87f5-4841-8cd7-bbedcd4a8a93" />
+
+## Results
+<img width="711" height="789" alt="image" src="https://github.com/user-attachments/assets/9b8ad356-3e4c-4c7f-a286-dc5fd2c31a99" />
+<img width="833" height="739" alt="image" src="https://github.com/user-attachments/assets/31085dcf-d9d7-47ed-9f0b-bd169517c0d5" />
+<img width="527" height="567" alt="image" src="https://github.com/user-attachments/assets/af1e8cc2-642c-468a-95bc-98ed82d4bed1" />
+<img width="514" height="300" alt="image" src="https://github.com/user-attachments/assets/e94cad64-0ff9-49f8-a5ef-1bff43f98df9" />
+<img width="1216" height="356" alt="sindexplots" src="https://github.com/user-attachments/assets/410ba637-5f84-478c-b0d9-f77b32099c5e" />
+
 
